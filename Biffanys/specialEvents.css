@@ -1,0 +1,267 @@
+/* start of nav styling */
+.logo{
+    font-family: 'Sigmar One', cursive;
+    color: #fda751;
+    margin-left:5px;
+}
+/* styles the logo font family, and colors the text dark orange */
+
+.topnav-item{
+    padding-left: 100px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+/* adds 100px of padding to the left of each nav item */
+
+.topnav-link{
+    color: #FA4C48;
+    font-weight: bold;
+}
+/* styles the nav-links to be bold and have a red text color */
+
+.topnav-link:hover{
+    color: #B96332;
+    text-decoration: underline;
+}
+/* when you hover on the nav-links, they become dark red and underline */
+
+.active{
+    color: #3f1703;
+}
+
+body{
+    background-color: #e7edd3;
+}
+/* sets the background color of the back to an off white */
+
+.fa-clock-rotate-left{
+    padding-left: 5px;
+    --fa-animation-duration:15s;
+}
+/* puts some padding to the left of the clock, and slows the rotation of the logo*/
+
+/* end of nav styling */
+
+/* start of section1 styling */
+
+.special_events{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+/* styles the special events h1 tag */
+
+.section1{
+        background-color: #e8cb64;
+}
+/* sets the background color of section 1 to be a yellowy color */
+
+
+.sec1_header{
+    font-family: 'Sigmar One', cursive;
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+/* styles the sec1 header with a font family and size, sets text color to white, adds a shadow effect, centers the text, and adds some space to the bottom */
+
+.sec1_text{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+
+}
+/* styles the section1 text, by centering the text, adding a font family, font color and font size */
+
+#tree{
+    color: green;
+    text-shadow: none;
+    font-size: 50px;
+    padding-left: 5px;
+}
+/* colors the tree icon green, increases the size, and removes the text shadow */
+
+.trivia_img{
+    max-width: 100%;
+    height: auto;
+}
+/* makes the image responsive when the browser is resized */
+
+/* end of section 1 styling */
+
+/* start of section 2 styling */
+
+.se-section2{
+    background-color: #b96332;
+}
+/* sets the background color of section 4 to a goldish color */
+
+.se-s2_header{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    color: #5c0505;
+}
+/* styles the special events section 1 header within the first div section */
+
+.se-s2_text{
+    font-family: 'Rock Salt', cursive;
+    font-size: 35px;
+    color: #27211c;
+}
+/* styles the special events section 1 text */
+
+.se-s2_desc{
+    font-family: 'Lilita One', cursive;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+/* styles the special events page section 1 description */
+
+.se-s2_img{
+    max-width: 100%;
+    height: auto;
+}
+/* makes the images responsive */
+/* end of section 2 styling */
+
+/* start of section 3 styling */
+.section3{
+    background-color: #6DBBAB;
+}
+
+.se-s3_header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    color: #5c0505;
+}
+
+.fa-football{
+    --fa-animation-duration:10s;
+    padding-left: 10px;
+    color: brown;
+}
+
+
+.se-s3_text{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    color: #F0A7A3;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.se-s3_desc{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+}
+
+#disclaimer{
+    color:red;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.sports_img{
+    height: auto;
+    max-width: 100%;
+}
+/* makes the image responsive */
+
+/* end of section 3 styling */
+
+/* start of section 4 styling */
+
+.form_text{
+    text-align: center;
+}
+
+input[type=text], input[type=email]{
+    display: block;
+    width: 35vw;
+    margin-bottom: 15px;
+}
+/* selects only inputs type text and type email */
+
+.terms{
+    font-size: 15px;
+}
+/* sets the font size of the terms to be a little smaller */
+
+#success_message{
+     color: green;
+     font-size: 24px;
+}
+
+
+.se-s4_header{
+    font-family: 'Sigmar One', cursive;
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 50px;
+    text-align: center;
+}
+/* styles the special events section 4 header with a font style, size, color, and aligns the text */
+
+.se-s4_text{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+/* styles the special events section 4 text with a font style, size, and aligns the text */
+
+
+/* start of footer styling */
+#footer{
+    background-color: #4c4541;
+    padding-bottom: 20px;
+}
+/* sets the background color of the footer to be a dark orangey gray */
+
+.bottomLogo{
+    font-family: 'Sigmar One', cursive;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+/* styles the header for the footer with similar styling to the nav bar logo, but with white text color, underlined, and centered in the page */
+
+.bottomNav-link{
+    color:white;
+}
+/* styles the links of the footer to have a white text color */
+
+.bottomNav-link:hover{
+    color: gold;
+    text-decoration: underline;
+}
+/* when you hover over the footer links, they become gold and underline */
+
+.social_media{
+    color:white;
+    font-size: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+/* styles the social media links with padding, font size and text color */
+
+.follow_us{
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 30px;
+}
+/* styles the "follow us" heading  */
+
+/* end of footer styling */
+
+
+

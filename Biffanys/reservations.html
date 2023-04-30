@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/hot-sneaks/jquery-ui.css">
+    <link rel="stylesheet" href="reservations.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Luckiest+Guy&family=Lilita+One&family=Playfair+Display&family=Roboto+Condensed&family=Lakki+Reddy&family=Gloria+Hallelujah&family=Rock+Salt&family=Merriweather:ital,wght@1,700&family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/af3ff847a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav Bar w/logo to the left -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html"
+          >Breakfast At Biffany's<i
+            class="fa-sharp fa-solid fa-clock-rotate-left fa-spin fa-spin-reverse"
+            style="color: #e55b38"
+          ></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item topnav-item">
+              <a
+                class="nav-link topnav-link"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item topnav-item">
+              <a class="nav-link topnav-link" href="menu.html"
+                >Browse Menu</a
+              >
+            </li>
+            <li class="nav-item topnav-item">
+              <a class="nav-link topnav-link" href="specialEvents.html"
+                >Special Events</a
+              >
+            </li>
+            <li class="nav-item topnav-item">
+              <a class="nav-link topnav-link active" href="reservations.html">Reservations</a>
+            </li>
+            <li class="nav-item topnav-item">
+              <a class="nav-link topnav-link" href="onlineOrders.html">Order Online</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of nav bar -->
+
+    <!-- first section -->
+    <h1 class="header">Reservations</h1>
+    <div class="flex-container">
+        <div class="row">
+            <div class="form col-md-5 ms-5 mt-3 mb-2 p-1">
+                <p class="form_text">Want a blast from the past? Reserve a table at Biffany's today!</p>
+                <form>
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" minlength="3" maxlength="35" placeholder="Type Email Address here">
+                  <label for="fname">First Name: </label>
+                  <input type="text" id="fname" minlength="3" maxlength="35" placeholder="First Name">
+                  <label for="lname" >Last Name: </label>
+                  <input type="text" id="lname" minlength="3" maxlength="35" placeholder="Last Name">
+                  <p>Date: <input type="text" placeholder="mm/dd/yyyy" id="datepicker"></p>
+                  <div class="timeSlots">
+                    <button class="btn btn-primary me-3 mb-3">7:00pm</button>
+                    <button class="btn btn-primary me-3 mb-3">7:30pm</button>
+                    <button class="btn btn-primary me-3 mb-3">8:00pm</button>
+                    <button class="btn btn-primary me-3 mb-3">9:00pm</button>
+                  </div>
+                  <label for="party">What is your party size?</label>
+                  <select class="mb-3" name="party" id="party">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                  <p>For parties sizes greater than 6, please email us at reservations@biffanys.com</p> 
+                  <p class="terms"><input type="checkbox" id="checkbox">  Click here if you agree to receive notifications about your reservation.</p>
+                  <input id='submit' type="submit">
+                </form>
+                <div id="success_message"></div>
+              </div>
+        
+            <!-- Make a reservations form that includes the following: first name, last name, email address, party size, and date selector. 
+            When they select a date, it will pop up with some buttons with different times available -->
+        
+            <!-- end of first section -->
+            <div class="col-md-6">
+                <img class="poster" src="https://hbomax-images.warnermediacdn.com/images/GY0oj4g5-mozDwgEAAAFJ/tileburnedin?size=1280x720&partner=hbomaxcom&v=2d6aa51ec6edd3a67a63b7e0cbcffef6&host=art-gallery.api.hbo.com&language=en-us&w=1280" alt="poser">
+              </div>
+            <!-- start of second section -->
+        
+            <!-- end of section section -->
+        
+        </div>
+    
+
+        </div>
+        
+    
+
+    <!-- Start of footer -->
+    <div id="footer" class="flex-container footer col-12">
+        <div class="row justify-content-center">
+          <h3 class="bottomLogo">Breakfast At Biffany's</h3>
+          <hr />
+        </div>
+        <div class="row">
+          <!-- first vertical nav -->
+          <div class="col-md-4 offset-md-2">
+            <ul id="footer" class="nav flex-column">
+              <li class="nav-item bottomNav-item">
+                <a
+                  class="nav-link bottomNav-link"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item bottomNav-item">
+                <a class="nav-link bottomNav-link" href="menu.html"
+                  >Menu</a
+                >
+              </li>
+              <li class="nav-item bottomNav-item">
+                <a class="nav-link bottomNav-link" href="specialEvents.html"
+                  >Special Events</a
+                >
+              </li>
+              <li class="nav-item bottomNav-item">
+                <a class="nav-link bottomNav-link" href="reservations.html">Reservations</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of first vertical nav -->
+          <!-- start of social media tags -->
+          <div class="col-md-4 offset-md-2">
+            <h5 class="follow_us">Follow us!</h5>
+            <a href="https://twitter.com/BacktotheFuture">
+              <i class="fa-solid fa-dove social_media"></i>
+            </a>
+            <a href="https://www.facebook.com/BTTF/">
+              <i class="fa-brands fa-facebook social_media"></i>
+            </a>
+            <a href="https://www.instagram.com/backtothefuturetrilogy/?hl=en">
+              <i class="fa-brands fa-instagram social_media"></i>
+            </a>
+          </div>
+          <!-- end of social media tags -->
+        </div>
+      </div>
+      <!-- end of footer -->
+      <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
+      <script src="reservations.js" async defer></script>
+    </body>
+  </html>
+  

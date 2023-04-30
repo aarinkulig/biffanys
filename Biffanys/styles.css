@@ -1,0 +1,252 @@
+/* start of nav styling */
+.logo{
+    font-family: 'Sigmar One', cursive;
+    color: #fda751;
+    margin-left:5px;
+}
+/* styles the logo font family, and colors the text dark orange */
+
+.topnav-item{
+    padding-left: 100px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+/* adds 100px of padding to the left of each nav item */
+
+.topnav-link{
+    color: #FA4C48;
+    font-weight: bold;
+}
+/* styles the nav-links to be bold and have a red text color */
+
+.topnav-link:hover{
+    color: #B96332;
+    text-decoration: underline;
+}
+/* when you hover on the nav-links, they become dark red and underline */
+
+.active{
+    color: #3f1703;
+}
+
+body{
+    background-color: #e7edd3;
+}
+/* sets the background color of the back to an off white */
+
+.fa-clock-rotate-left{
+    padding-left: 5px;
+    --fa-animation-duration:15s;
+}
+/* puts some padding to the left of the clock, and slows the rotation of the logo*/
+
+/* end of nav styling */
+
+.header{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+img{
+    height: 500px;
+}
+/* sets the height of the images on the carousel to be the same */
+/* index.html */
+
+.sec1_header{
+    font-family: 'Sigmar One', cursive;
+    color: white;
+    font-size: 45px;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 50px;
+    text-align: center;
+}
+/* styles the section1 header, adding a font family, text color, font size, some text shadow, centers the text, and adds some space at the bottom  */
+
+
+.sec1_text{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+/* styles the section1 text by adding a font family, black text color, font size and centers the text */
+
+.section1{
+    background-color: #6DBBAB
+}
+/* sets the background color of section 1 to off-white */
+/* centers the text */
+
+.onlineOrdersBtn a{
+    color: white;
+    text-decoration: none;
+}
+
+.section2{
+    border: 2px solid #919169;
+    border-radius: 25px;
+    background-color: #d99691;
+    margin-top:50px;
+}
+/* sets the orangy background color, a greenish rounded border on the 2nd section and adds some space at the top,*/
+
+.img_rotate{
+    /* max-width:fit-content; */
+    animation: rotation 20s infinite linear;
+}
+/* sets the maximum size of the image to fit the div */
+/* adds an animation effect to the image that never stops, is linear, and slow */
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+/* rotates the ice cream image continuously around a fixed point */
+
+.thursday{
+    font-family: 'Lakki Reddy', cursive;
+    font-size: 50px;
+    margin-top:20px;
+}
+/* styles the wednesdays in a different font with a different font family, font size and adds some space to the top */
+
+.ic_partytext{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+}
+/* styles the icecream party text to be centered, adds some space to the bottom, and styles the font with a size and font family */
+
+.menu_btn{
+    background-color: #de475b;
+}
+/* styles the background color of the menu button */
+
+.menu_btn a{
+    color: white;
+    text-decoration: none;
+}
+/* styles the browse our menu button link */
+
+.menu_btn:hover{
+    background-color: #690412;
+}
+/* styles the background color darker when hovered on */
+
+.section3{
+    background-color: #FDA751;
+}
+/* sets the background color of section 3 to be a yellowy color */
+
+
+.sec3_header{
+    font-family: 'Sigmar One', cursive;
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+/* styles the sec3 header with a font family and size, sets text color to white, adds a shadow effect, centers the text, and adds some space to the bottom */
+
+.sec3_text{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+
+}
+/* styles the section1 text, by centering the text, adding a font family, font color and font size */
+
+#tree{
+    color: green;
+    text-shadow: none;
+    font-size: 50px;
+    padding-left: 5px;
+}
+/* colors the tree icon green, increases the size, and removes the text shadow */
+
+.trivia_img{
+    max-width: 100%;
+    height: 100%;
+}
+/* makes the image responsive when the browser is resized */
+
+.specialEventsBtn{
+    color: white;
+    text-decoration: none;
+}
+
+/* end of section 3 styling*/
+/* start of story styling */
+.section4{
+    background-color: #FF6250;
+}
+
+.story{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.griffany{
+    height: 100%;
+    max-width: 100%;
+}
+
+
+/* end of story styling */
+/* start of footer styling */
+#footer{
+    background-color: #4c4541;
+    padding-bottom: 20px;
+}
+/* sets the background color of the footer to be a dark orangey gray */
+
+.bottomLogo{
+    font-family: 'Sigmar One', cursive;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+/* styles the header for the footer with similar styling to the nav bar logo, but with white text color, underlined, and centered in the page */
+
+.bottomNav-link{
+    color:white;
+}
+/* styles the links of the footer to have a white text color */
+
+.bottomNav-link:hover{
+    color: gold;
+    text-decoration: underline;
+}
+/* when you hover over the footer links, they become gold and underline */
+
+.social_media{
+    color:white;
+    font-size: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+/* styles the social media links with padding, font size and text color */
+
+.follow_us{
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 30px;
+}
+/* styles the "follow us" heading  */
+
+/* end of footer styling */
+
+
+

@@ -1,0 +1,171 @@
+/* start of nav styling */
+.logo{
+    font-family: 'Sigmar One', cursive;
+    color: #fda751;
+    margin-left:5px;
+}
+/* styles the logo font family, and colors the text dark orange */
+
+.topnav-item{
+    padding-left: 100px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+/* adds 100px of padding to the left of each nav item */
+
+.topnav-link{
+    color: #FA4C48;
+    font-weight: bold;
+}
+/* styles the nav-links to be bold and have a red text color */
+
+.topnav-link:hover{
+    color: #B96332;
+    text-decoration: underline;
+}
+/* when you hover on the nav-links, they become dark red and underline */
+
+.active{
+    color: #3f1703;
+}
+
+body{
+    background-color: #e7edd3;
+}
+/* sets the background color of the back to an off white */
+
+.fa-clock-rotate-left{
+    padding-left: 5px;
+    --fa-animation-duration:15s;
+}
+/* puts some padding to the left of the clock, and slows the rotation of the logo*/
+
+/* end of nav styling */
+
+/* start of menu styling */
+
+/* start of menu styling */
+
+.menu_header{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.accordion-button{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.card{
+    height: auto;
+    text-align: center;
+}
+/* sets the height of all the cards to be the same and hides the overflow text */
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+    
+}
+/* sets the max height and width of image cards */
+
+/* end of onlineOrder styling */
+
+.fa-angle-up{
+    float:right;
+}
+
+.card_width{
+    width: 100%;
+}
+
+input[type=checkbox]{
+    display: inline-block;
+}
+
+input[type=submit]{
+    margin-top: 15px;
+}
+/* end of menu styling */
+/* orderTotal styling */
+
+.header2{
+    padding-top: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.orderInfo{
+    border: solid white 2px;
+    border-radius: 5px;
+    background-color: #e8cb64;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.orderDetail, .totalHeader{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.orderList{
+    list-style-type: none;
+}
+
+.list-items{
+    font-size: 20px;
+}
+
+#failMessage{
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px #ff0000;
+}
+/* end of orderTotal styling */
+
+/* start of footer styling */
+#footer{
+    background-color: #4c4541;
+    padding-bottom: 20px;
+}
+/* sets the background color of the footer to be a dark orangey gray */
+
+.bottomLogo{
+    font-family: 'Sigmar One', cursive;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+/* styles the header for the footer with similar styling to the nav bar logo, but with white text color, underlined, and centered in the page */
+
+.bottomNav-link{
+    color:white;
+}
+/* styles the links of the footer to have a white text color */
+
+.bottomNav-link:hover{
+    color: gold;
+    text-decoration: underline;
+}
+/* when you hover over the footer links, they become gold and underline */
+
+.social_media{
+    color:white;
+    font-size: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+/* styles the social media links with padding, font size and text color */
+
+.follow_us{
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 30px;
+}
+/* styles the "follow us" heading  */
+
+/* end of footer styling */

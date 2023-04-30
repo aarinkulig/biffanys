@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="onlineOrders.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Luckiest+Guy&family=Lilita+One&family=Playfair+Display&family=Roboto+Condensed&family=Lakki+Reddy&family=Gloria+Hallelujah&family=Rock+Salt&family=Merriweather:ital,wght@1,700&family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/af3ff847a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav Bar w/logo to the left -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html"
+          >Breakfast At Biffany's<i
+            class="fa-sharp fa-solid fa-clock-rotate-left fa-spin fa-spin-reverse"
+            style="color: #e55b38"
+          ></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item topnav-item">
+              <a
+                class="nav-link topnav-link"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item topnav-item">
+              <a class="nav-link topnav-link" href="menu.html"
+                >Browse Menu</a
+              >
+            </li>
+            <li class="nav-item topnav-item">
+              <a class="nav-link topnav-link" href="specialEvents.html"
+                >Special Events</a
+              >
+            </li>
+            <li class="nav-item topnav-item">
+              <a class="nav-link topnav-link" href="reservations.html">Reservations</a>
+            </li>
+            <li class="nav-item topnav-item">
+              <a class="nav-link topnav-link active" href="onlineOrders.html">Order Online</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of nav bar -->
+
+    <!-- start of page styling -->
+    <h1 class="menu_header">Online Orders</h1>
+    <!-- container and row -->
+  <div class="fluid-container">
+    <div class="row">
+    <!-- Start of menu -->
+    <div class="accordion col-md-9 mt-3" id="accordionExample">
+    <!-- start of appetizers -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Appetizers
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!-- start of first row -->
+            <div class="row">
+                          <!-- appCard1 -->
+              <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card" id="card_app_1">
+                  <img src="https://www.jessicagavin.com/wp-content/uploads/2023/02/deviled-eggs-with-bacon-12-1200.jpg" class="card-img-top" alt="eggs">
+                  <div class="card-body">
+                    <h5 class="card-title">Deviled Eggs<i class="fa-solid fa-angle-up fa-angle-up_1"></i></p></h5>
+                    <div class="hide hide1">
+                      <p>Price : $4.99</p>
+                      <p class="mt-3">How would you like to modify your appetizer?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxeggs">
+                        <label for="mod1">Extra Eggs</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="nomayo">
+                        <label for="mod2">No Mayo</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="noegg">
+                        <label for="mod3">No Eggs</label>
+                        <input type="submit" class="cartBtn cartBtn1" value="Add to Cart">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of appCard1 -->
+              <!-- start of appCard2 -->
+              <div class="col-sm-4 mb-3">
+                <div class="card" id="card_app_2">
+                  <img src="https://natashaskitchen.com/wp-content/uploads/2022/02/Buffalo-Wings-SQ.jpg" class="card-img-top" alt="wings">
+                  <div class="card-body">
+                    <h5 class="card-title">Buffalo Wings<i class="fa-solid fa-angle-up fa-angle-up_2"></i></h5>
+                    <div class="hide hide2">
+                      <p>Price : $5.99 </p>
+                        <p class="mt-3">How would you like to modify your appetizer?</p>
+                        <form action="/action_page.php">
+                          <input type="checkbox" class="mod1" name="mod1" value="xxsauce">
+                          <label for="mod1">Extra Sauce</label>
+                          <input type="checkbox" class="mod2" name="mod2" value="xxranch">
+                          <label for="mod2">Extra Ranch</label>
+                          <input type="checkbox" class="mod3" name="mod3" value="nocelery">
+                          <label for="mod3">No Celery</label>
+                          <input type="submit" value="Add to Cart" class="cartBtn cartBtn2">
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of appCard2 -->
+              <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card" id="card_app_3">
+                  <img src="https://www.thecountrycook.net/wp-content/uploads/2022/12/thumbnail-Air-Fryer-Jalapeno-Poppers-scaled.jpg" class="card-img-top" alt="poppers">
+                  <div class="card-body">
+                    <h5 class="card-title">Poppers<i class="fa-solid fa-angle-up fa-angle-up_3"></i></h5>
+                    <div class="hide hide3">
+                      <p>Price : $6.99 </p>
+                      <p class="mt-3">How would you like to modify your appetizer?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxsauce">
+                        <label for="mod1">Extra Sauce</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="xxjalapeno">
+                        <label for="mod2">Extra Jalapeno</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="nocheese">
+                        <label for="mod3">No Cheese</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn3">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of appCard3 -->
+            <!-- end of first row -->
+            <!-- start of second row -->
+            <!-- start of appCard4 -->
+            <div class="row">
+              <div class="col-sm-4 mb-3 mt-3 mb-sm-0">
+                <div class="card" id="card_app_4">
+                  <img src="https://sugarspunrun.com/wp-content/uploads/2022/09/Fried-Pickles-recipe-1-of-1-2.jpg" class="card-img-top" alt="pickles">
+                  <div class="card-body">
+                    <h5 class="card-title">Fried Pickles<i class="fa-solid fa-angle-up fa-angle-up_4"></i></h5>
+                    <div class="hide hide4">
+                      <p>Price : $4.99 </p>
+                      <p class="mt-3">How would you like to modify your appetizer?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxRanch">
+                        <label for="mod1">Extra Ranch</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="sweetPick">
+                        <label for="mod2">Sweet Pickles</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="xxBreading">
+                        <label for="mod3">Extra Breading</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn4">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of appCard4 -->
+              <!-- start of appCard5 -->
+              <div class="col-sm-4 mb-3 mt-3">
+                <div class="card" id="card_app_5">
+                  <img src="https://losfoodiesmagazine.com/wp-content/uploads/2021/10/Nachos-Supreme-500x500.jpg" class="card-img-top" alt="nachos">
+                  <div class="card-body">
+                    <h5 class="card-title">Nachos<i class="fa-solid fa-angle-up fa-angle-up_5"></i></h5>
+                    <div class="hide hide5">
+                      <p>Price : $6.99 </p>
+                      <p class="mt-3">How would you like to modify your appetizer?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxcheese">
+                        <label for="mod1">Extra Cheese</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="xxbeans">
+                        <label for="mod2">Extra Beans</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="nocheese">
+                        <label for="mod3">No Cheese</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn5">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of appCard5 -->
+              <!-- start of appCard6 -->
+              <div class="col-sm-4 mt-3 mb-3 mb-sm-0">
+                <div class="card" id="card_app_6">
+                  <img src="https://howtofeedaloon.com/wp-content/uploads/2015/04/calamari-IG.jpg" class="card-img-top" alt="calamari">
+                  <div class="card-body">
+                    <h5 class="card-title">Fried Calamari<i class="fa-solid fa-angle-up fa-angle-up_6"></i></h5>
+                    <div class="hide hide6">
+                      <p>Price : $8.99 </p>
+                      <p class="mt-3">How would you like to modify your appetizer?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxsauce">
+                        <label for="mod1">Extra Sauce</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="xxlemons">
+                        <label for="mod2">Extra Lemons</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="nobreading">
+                        <label for="mod3">No Breading</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn6">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- end of appCard6 -->
+            </div>
+            <!-- end of second row -->
+          </div>
+        </div>
+      </div>
+      <!-- end of appetizers -->
+      <!-- start of main courses -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Main Courses
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!-- start of first row -->
+            <div class="row">
+            <!-- start of mcCard1 -->
+              <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card" id="card_mc_1">
+                  <img src="https://www.budgetbytes.com/wp-content/uploads/2021/09/Classic-Meatloaf-side.jpg" class="card-img-top" alt="Meatloaf">
+                  <div class="card-body">
+                    <h5 class="card-title">Meatloaf<i class="fa-solid fa-angle-up fa-angle-up_7"></i></h5>
+                    <div class="hide hide7">
+                      <p>Price : $16.99 </p>
+                      <p class="mt-3">How would you like to modify your main course?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxketchup">
+                        <label for="mod1">Extra Ketchup</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="cheesetots">
+                        <label for="mod2">Cheesy Potatoes</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="nosauce">
+                        <label for="mod3">No Sauce</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn7">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of mcCard1 -->
+              <!-- start of mcCard2 -->
+              <div class="col-sm-4 mb-3">
+                <div class="card" id="card_mc_2">
+                  <img src="https://www.saveur.com/uploads/2019/03/18/2UDMHXRA2MNF6E5IQBJDJSGEP4.jpg?auto=webp" class="card-img-top" alt="Rehydrated Pizza">
+                  <div class="card-body">
+                    <h5 class="card-title">Rehydrated Pizza<i class="fa-solid fa-angle-up fa-angle-up_8"></i></h5>
+                    <div class="hide hide8">
+                      <p>Price : $15.99 </p>
+                      <p class="mt-3">How would you like to modify your main course?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxcheese">
+                        <label for="mod1">Extra Cheese</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="xxsausage">
+                        <label for="mod2">Extra Sausage</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="xxpepp">
+                        <label for="mod3">Extra Pepperoni</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn8">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of mcCard2 -->
+              <!-- start of mcCard3 -->
+              <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card" id="card_mc_3">
+                  <img src="https://www.lovelesscafe.com/wp-content/uploads/2019/11/bbq-bacon-burger-recipe.jpg" class="card-img-top" alt="Burgers">
+                  <div class="card-body">
+                    <h5 class="card-title newName">Burgers<i class="fa-solid fa-angle-up fa-angle-up_9"></i></h5>
+                    <div class="hide hide9">
+                      <p>Price : $14.99 </p>
+                      <p class="mt-3">How would you like to modify your main course?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxketchup">
+                        <label for="mod1">Extra Ketchup</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="noOnions">
+                        <label for="mod2">No Onions</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="xxCheese">
+                        <label for="mod3">Extra Cheese</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn9">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of mcCard3 -->
+            <!-- end of first row -->
+            <!-- start of second row -->
+            <div class="row">
+                <!-- start of mcCard4 -->
+              <div class="col-sm-4 mb-3 mt-3 mb-sm-0">
+                <div class="card" id="card_mc_4">
+                  <img src="https://www.culinaryhill.com/wp-content/uploads/2021/01/Salisbury-Steak-Culinary-Hill-1200x800-2.jpg" class="card-img-top" alt="Salisbury Steak">
+                  <div class="card-body">
+                    <h5 class="card-title">Upscale TV dinner<i class="fa-solid fa-angle-up fa-angle-up_10"></i></h5>
+                    <div class="hide hide10">
+                      <p>Price : $13.99 </p>
+                      <p class="mt-3">How would you like to modify your main course?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxGravy">
+                        <label for="mod1">Extra Gravy</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="cheesetots">
+                        <label for="mod2">Cheesy Potatoes</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="nosauce">
+                        <label for="mod3">No Sauce</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn10">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of mcCard4 -->
+              <!-- start of mcCard5 -->
+              <div class="col-sm-4 mb-3 mt-3">
+                <div class="card" id="card_mc_5">
+                  <img src="https://natashaskitchen.com/wp-content/uploads/2021/09/Sloppy-Joes-Recipe-5.jpg" class="card-img-top" alt="Sloppy Joes">
+                  <div class="card-body">
+                    <h5 class="card-title">Sloppy Joes<i class="fa-solid fa-angle-up fa-angle-up_11"></i></h5>
+                    <div class="hide hide11">
+                      <p>Price : $13.99 </p>
+                      <p class="mt-3">How would you like to modify your main course?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxSloppy">
+                        <label for="mod1">Extra Sloppy</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="fries">
+                        <label for="mod2">French Fries</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="addCheese">
+                        <label for="mod3">Add Cheese</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn11">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of mcCard5 -->
+              <!-- start of mcCard6 -->
+              <div class="col-sm-4 mt-3 mb-3 mb-sm-0">
+                <div class="card" id="card_mc_6">
+                  <img src="https://www.thewholesomedish.com/wp-content/uploads/2018/07/Best-Lasagna-550-500x375.jpg" class="card-img-top" alt="Lasagna">
+                  <div class="card-body">
+                    <h5 class="card-title">Lasagna<i class="fa-solid fa-angle-up fa-angle-up_12"></i></h5>
+                    <div class="hide hide12">
+                      <p>Price : $17.99 </p>
+                      <p class="mt-3">How would you like to modify your main course?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxCheese">
+                        <label for="mod1">Extra Cheese</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="frenchBread">
+                        <label for="mod2">French Bread</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="noMeat">
+                        <label for="mod3">No Meat</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn12">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of mcCard6 -->
+            </div>
+            <!-- end of second row -->
+          </div>
+        </div>
+      </div>
+      <!-- end of main courses -->
+      <!-- start of desserts -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Desserts
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!-- start of first row -->
+            <div class="row">
+                <!-- start of desCard1 -->
+              <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card" id="card_des_1">
+                  <img src="https://www.allrecipes.com/thmb/ZGUmacTEWzzOz-W1CBp_RizZH1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9368226-seven-layer-gelatin-salad-Trusted-Brands-4x3-1-f46204a939564fc897faf9405485b01c.jpg" class="card-img-top" alt="Jello">
+                  <div class="card-body">
+                    <h5 class="card-title">Jello<i class="fa-solid fa-angle-up fa-angle-up_13"></i></h5>
+                    <div class="hide hide13">
+                      <p>Price : $7.99 </p>
+                      <p class="mt-3">How would you like to modify your dessert?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxJello">
+                        <label for="mod1">Extra Jello</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="xxWhip">
+                        <label for="mod2">Extra Whipped Cream</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="noWhip">
+                        <label for="mod3">No Whipped Cream</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn13">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of desCard1 -->
+              <!-- start of desCard2 -->
+              <div class="col-sm-4 mb-3">
+                <div class="card" id="card_des_2">
+                  <img src="https://www.thespruceeats.com/thmb/BW-xclw0817YVRFoqODASGtOP1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ice-cream-float-4846526-hero-03_alt-e5f74e7cac504fd7b18bd95b6b7be6c6.jpg" class="card-img-top" alt="Ice Cream Soda">
+                  <div class="card-body">
+                    <h5 class="card-title">Ice Cream Soda<i class="fa-solid fa-angle-up fa-angle-up_14"></i></h5>
+                    <div class="hide hide14">
+                      <p>Price : $3.99 </p>
+                      <p class="mt-3">How would you like to modify your dessert?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxChoco">
+                        <label for="mod1">Extra Chocolate Syrup</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="xxCherry">
+                        <label for="mod2">Extra Cherries</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="xxWhip">
+                        <label for="mod3">Extra Whipped Cream</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn14">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of desCard2 -->
+              <!-- start of desCard3 -->
+              <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card" id="card_des_3">
+                  <img src="https://lilluna.com/wp-content/uploads/2019/05/boston_cream_pie_1.jpg" class="card-img-top" alt="Boston Creme Pie">
+                  <div class="card-body">
+                    <h5 class="card-title">Boston Creme Pie<i class="fa-solid fa-angle-up fa-angle-up_15"></i></h5>
+                    <div class="hide hide15">
+                    <p>Price : $4.99 </p>
+                      <p class="mt-3">How would you like to modify your dessert?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxCustard">
+                        <label for="mod1">Extra Custard</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="iceCream">
+                        <label for="mod2">Ice Cream</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="Whip">
+                        <label for="mod3">Whipped Cream</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn15">
+                      </form>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of desCard3 -->
+            </div>
+            <!-- end of first row -->
+            <!-- start of second row -->
+            <div class="row">
+                <!-- start of desCard4 -->
+              <div class="col-sm-4 mb-3 mt-3 mb-sm-0">
+                <div class="card" id="card_des_4">
+                  <img src="https://static.onecms.io/wp-content/uploads/sites/43/2023/01/04/17691-pineapple-upside-down-cake-vii-humblepieliving-003-4x3-1.jpg" class="card-img-top" alt="Pineapple Upside Down Cake">
+                  <div class="card-body">
+                    <h5 class="card-title">Pineapple Upside Down Cake<i class="fa-solid fa-angle-up fa-angle-up_16"></i></h5>
+                    <div class="hide hide16">
+                      <p>Price : $5.99 </p>
+                      <p class="mt-3">How would you like to modify your dessert?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxPapple">
+                        <label for="mod1">Extra Pineapple</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="xxCherries">
+                        <label for="mod2">Extra Cherries Cream</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="Whip">
+                        <label for="mod3">Whipped Cream</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn16">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of desCard4 -->
+              <!-- start of desCard5 -->
+              <div class="col-sm-4 mb-3 mt-3">
+                <div class="card" id="card_des_5">
+                  <img src="https://www.keep-calm-and-eat-ice-cream.com/wp-content/uploads/2022/08/Ice-cream-sundae-hero-11.jpg" class="card-img-top" alt="Ice Cream Sundae">
+                  <div class="card-body">
+                    <h5 class="card-title">Ice Cream Sundae<i class="fa-solid fa-angle-up fa-angle-up_17"></i></h5>
+                    <div class="hide hide17">
+                      <p>Price : $4.99 </p>
+                      <p class="mt-3">How would you like to modify your dessert?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxChoco">
+                        <label for="mod1">Extra Chocolate Syrup</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="xxCherry">
+                        <label for="mod2">Extra Cherries</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="xxWhip">
+                        <label for="mod3">Extra Whipped Cream</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn17">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of desCard5 -->
+              <!-- start of desCard6 -->
+              <div class="col-sm-4 mt-3 mb-3 mb-sm-0">
+                <div class="card" id="card_des_6">
+                  <img src="https://artofnaturalliving.com/wp-content/uploads/2021/07/Chocolate_Malt_08-735x735.jpg" class="card-img-top" alt="Chocolate Malt">
+                  <div class="card-body">
+                    <h5 class="card-title">Chocolate Malt<i class="fa-solid fa-angle-up fa-angle-up_18"></i></h5>
+                    <div class="hide hide18">
+                      <p>Price : $3.99 </p>
+                      <p class="mt-3">How would you like to modify your dessert?</p>
+                      <form action="/action_page.php">
+                        <input type="checkbox" class="mod1" name="mod1" value="xxChoco">
+                        <label for="mod1">Extra Chocolate Syrup</label>
+                        <input type="checkbox" class="mod2" name="mod2" value="xxCherry">
+                        <label for="mod2">Extra Cherries</label>
+                        <input type="checkbox" class="mod3" name="mod3" value="xxWhip">
+                        <label for="mod3">Extra Whipped Cream</label>
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn18">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of desCard6 -->
+            </div>
+            <!-- end of second row -->
+          </div>
+        </div>
+      
+      <!-- end of desserts -->
+      <!-- start of drinks -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Drinks
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!-- start of first row -->
+            <div class="row">
+                <!-- start of drinkCard1 -->
+              <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card" id="card_drink_1">
+                  <img src="https://live.staticflickr.com/65535/50788974817_bef842159d_b.jpg" class="card-img-top" alt="Pepsi Free">
+                  <div class="card-body">
+                    <h5 class="card-title">Pepsi Free<i class="fa-solid fa-angle-up fa-angle-up_19"></i></h5>
+                    <div class="hide hide19">
+                      <p>Price : $1.99 </p>
+                      <form action="/action_page.php">
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn19">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of drinkCard1 -->
+              <!-- start of drinkCard2 -->
+              <div class="col-sm-4 mb-3">
+                <div class="card" id="card_drink_2">
+                  <img src="https://images.wsj.net/im-245569/square" class="card-img-top" alt="Tab">
+                  <div class="card-body">
+                    <h5 class="card-title">Tab<i class="fa-solid fa-angle-up fa-angle-up_20"></i></h5>
+                    <div class="hide hide20">
+                      <p>Price : $1.99 </p>
+                      <form action="/action_page.php">
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn20">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of drinkCard 2 -->
+              <!-- start of drinkCard3 -->
+              <div class="col-sm-4 mb-3 mb-sm-0">
+                <div class="card" id="card_drink_3">
+                  <img src="https://alwaystheholidays.com/wp-content/uploads/2021/09/homemade-chocolate-milk.jpg" class="card-img-top" alt="Milk…Chocolate">
+                  <div class="card-body">
+                    <h5 class="card-title">Milk…Chocolate<i class="fa-solid fa-angle-up fa-angle-up_21"></i></h5>
+                    <div class="hide hide21">
+                      <p>Price : $1.99 </p>
+                      <form action="/action_page.php">
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn21">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of drinkCard3 -->
+            </div>
+            <!-- end of first row -->
+            <!-- start of second row -->
+            <div class="row">
+                <!-- start of drinkCard4 -->
+              <div class="col-sm-4 mb-3 mt-3 mb-sm-0">
+                <div class="card" id="card_drink_4">
+                  <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-3402c4f.jpg?quality=90&resize=500,454" class="card-img-top" alt="Coffee.">
+                  <div class="card-body">
+                    <h5 class="card-title">Coffee<i class="fa-solid fa-angle-up fa-angle-up_22"></i></h5>
+                    <div class="hide hide22">
+                      <p>Price : $1.99 </p>
+                      <form action="/action_page.php">
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn22">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of drinkCard4 -->
+              <!-- start of drinkCard5 -->
+              <div class="col-sm-4 mb-3 mt-3">
+                <div class="card" id="card_drink_5">
+                  <img src="https://www.thecountrycook.net/wp-content/uploads/2011/01/sweet-tea-thumbnail-1.jpg" class="card-img-top" alt="Sweet Tea">
+                  <div class="card-body">
+                    <h5 class="card-title">Sweet Tea<i class="fa-solid fa-angle-up fa-angle-up_23"></i></h5>
+                    <div class="hide hide23">
+                      <p>Price : $1.99 </p>
+                      <form action="/action_page.php">
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn23">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of drinkCard5 -->
+              <!-- start of drinkCard6 -->
+              <div class="col-sm-4 mt-3 mb-3 mb-sm-0">
+                <div class="card" id="card_drink_6">
+                  <img src="https://www.bravotv.com/sites/bravo/files/styles/blog-post-embed/public/field_blog_image/2017/06/the-feast-tiki-cocktail-promote.jpg?itok=ciVd3kUv" class="card-img-top" alt="Riverwater">
+                  <div class="card-body">
+                    <h5 class="card-title">Cocktails<i class="fa-solid fa-angle-up fa-angle-up_24"></i></h5>
+                    <div class="hide hide24">
+                      <p>Price : $8.99 </p>
+                      <form action="/action_page.php">
+                        <input type="submit" value="Add to Cart" class="cartBtn cartBtn24">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of drinkCard6 -->
+            </div>
+            <!-- end of second row -->
+          </div>
+        </div>
+      </div>
+      </div>
+    
+      
+      <!-- end of drinks -->
+<!-- end of menu-->
+<!-- start of order total bar-->
+        <div class="col-md-3 mt-3 orderInfo">
+            <h2 class="header2">Your Cart:</h2>
+            <hr>
+            <div class="orderDetails">
+              <h3>Order Details</h3>
+            <ul class="orderList">
+              
+            </ul>
+            <hr>
+            <h3 class="totalHeader">Order Total: <span id="orderTotal"></span></h3>
+            <button id="orderSubmit">Checkout</button>
+            <div id="failMessage"></div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+    
+
+
+
+     <!-- Start of footer -->
+    <div id="footer" class="flex-container footer col-12">
+        <div class="row justify-content-center">
+          <h3 class="bottomLogo">Breakfast At Biffany's</h3>
+          <hr />
+        </div>
+        <div class="row">
+          <!-- first vertical nav -->
+          <div class="col-md-4 offset-md-2">
+            <ul id="footer" class="nav flex-column">
+              <li class="nav-item bottomNav-item">
+                <a
+                  class="nav-link bottomNav-link"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item bottomNav-item">
+                <a class="nav-link bottomNav-link" href="menu.html"
+                  >Menu</a
+                >
+              </li>
+              <li class="nav-item bottomNav-item">
+                <a class="nav-link bottomNav-link" href="specialEvents.html"
+                  >Special Events</a
+                >
+              </li>
+              <li class="nav-item bottomNav-item">
+                <a class="nav-link bottomNav-link" href="reservations.html">Reservations</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of first vertical nav -->
+          <!-- start of social media tags -->
+          <div class="col-md-4 offset-md-2">
+            <h5 class="follow_us">Follow us!</h5>
+            <a href="https://twitter.com/BacktotheFuture">
+              <i class="fa-solid fa-dove social_media"></i>
+            </a>
+            <a href="https://www.facebook.com/BTTF/">
+              <i class="fa-brands fa-facebook social_media"></i>
+            </a>
+            <a href="https://www.instagram.com/backtothefuturetrilogy/?hl=en">
+              <i class="fa-brands fa-instagram social_media"></i>
+            </a>
+          </div>
+          <!-- end of social media tags -->
+        </div>
+      </div>
+      <!-- end of footer -->
+      </div>
+      <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
+      <script src="onlineOrders.js" async defer></script>
+    </body>
+  </html>
+  
